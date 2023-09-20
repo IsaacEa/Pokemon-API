@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>POKEAPI</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/function.js"></script>
+        <link rel="stylesheet" href="css/estil.css" />
+        <script type="text/javascript">
+            window.addEventListener('load', loadEvents);
+        </script>
+    </head>
+
+    <body id="pokemonList">
+        <nav id = "cabecera">
+            <div id ="opciones">
+                <ul class = "menuSuperior">
+
+                    <li class = "textoCabecera" id ="textoPokemon">
+                        <a class = "link" href="listaPokemon.html">Pokémon</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoHabitats">
+                        <a class = "link" href="regiones.html">Regiones</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoGeneraciones">
+                        <a class = "link" href="generaciones.html">Generaciones</a>
+                    </li>
+                </ul>
+
+                <ul class = "menuSuperior">
+
+                    <li class = "textoCabecera" id ="textoObjetos">
+                        <a class = "link" href="objetos.html">Objetos</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoSprites">
+                        <a class = "link" href="sprites.html">Sprites</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoInicio">
+                        <a class = "link" href="index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="principal">
+            <div class="titulo">
+                <h1>POKÉDEX</h1>
+            </div>
+
+            <div id="buscarPokemon">
+                <select id="listaPokemon" class ="selectListas">
+                    <option selected disabled value="-1">¡Selecciona un Pokémon!</option>
+                </select>
+                <input type="text" id="buscadorPokemon" placeholder="¿Qué pokémon quieres buscar?">
+                <button id="buscar">¡Busca!</button>
+                
+            </div>
+
+            <div id ="resultadoInfoPokemon" class="resultado">
+                <div id="resultadoFotoDatos" class="contenedorResultado">
+                    <div id="foto">
+                        <img id="imagenPokemon" src="" alt="">
+                    </div>
+                    <div id="datos" class="transpa">
+                        <h1 id="nombrePokemon"></h1>
+                        <p id="datosPokemon"></p>
+                    </div>
+                    <h2 id="datosPokemonLocalizaciones" class="titulo">Localizaciones:</h2>
+                    <p id="localizaciones"></p>
+                </div>
+
+            </div>
+
+        </div>
+            
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>POKEAPI</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/functionSprites.js"></script>
+        <link rel="stylesheet" href="css/estil.css" />
+        <script type="text/javascript">
+            window.addEventListener('load', loadEvents);
+        </script>
+    </head>
+    <body id="spritesList">
+        <nav id = "cabecera">
+            <div id ="opciones">
+                <ul class = "menuSuperior">
+
+                    <li class = "textoCabecera" id ="textoPokemon">
+                        <a class = "link" href="listaPokemon.html">Pokémon</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoHabitats">
+                        <a class = "link" href="regiones.html">Regiones</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoGeneraciones">
+                        <a class = "link" href="generaciones.html">Generaciones</a>
+                    </li>
+                </ul>
+
+                <ul class = "menuSuperior">
+
+                    <li class = "textoCabecera" id ="textoObjetos">
+                        <a class = "link" href="objetos.html">Objetos</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoSprites">
+                        <a class = "link" href="sprites.html">Sprites</a>
+                    </li>
+
+                    <li class = "textoCabecera" id ="textoInicio">
+                        <a class = "link" href="index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="principal">
+            <div class="titulo">
+                <h1>SPRITES</h1>
+            </div>
+
+            <div id="buscarSprites">
+                <select id="listaPokemon" class="selectListas">
+                    <option selected disabled value="-1">¡Selecciona un pokémon!</option>
+                </select>
+                <input type="text" id="buscadorPokemon" placeholder="¿Qué pokémon quieres buscar?">
+                <button id="buscar">¡Busca!</button>
+                <button id="izquierda" class ="botonItem"><</button>
+                <button id="derecha" class ="botonItem">></button>
+            </div>
+
+            <div id ="resultadoSprite" class="resultado" >
+                <h1 id="nombrePkmn" class="tituloResultado"></h1>
+                <div id="contenedorFotoSprite">
+                    <img id="imgSprite">
+                </div>
+            </div>
+            <div id = "infoObjetos" class ="informacionAdicional">
+            </div>
+            <div id ="contenedorNombresObjetos"> 
+                <p id ="nombresSprites"></p>
+            </div>
+
+
+        </div>
+    </body>
+</html>
